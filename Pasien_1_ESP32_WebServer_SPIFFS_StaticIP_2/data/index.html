@@ -1,0 +1,69 @@
+<!DOCTYPE HTML><html>
+
+<head>
+  <title>Smart Health</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.highcharts.com/highcharts.js"></script>    
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body onload="initClock()">
+  <h2>Proyek Akhir Sistem Benam 2</h2>
+  <h4>Real-Time Smart Health Monitoring System</h3>
+  
+  <!-- Digital Clock Start -->
+  <div class="datetime">
+    <div class="date">
+      <span id="dayname">Day</span>,
+      <span id="month">Month</span>
+      <span id="daynum">00</span>,
+      <span id="year">Year</span>
+    </div>
+    
+    <div class="time">
+      <span id="hour">00</span>:
+      <span id="minutes">00</span>:
+      <span id="seconds">00</span>
+      <span id="period">AM</span>
+    </div>
+  </div>
+  <!-- Digital Clock End -->
+  <br>
+  <br>
+  <p class="nama">Nama : Adli Aulia Fattah Harahap</p>
+  <p class="datapasien">NPM &emsp;: 1906299710</p>
+  <p class="datapasien">Prodi&emsp;: Teknik Elektro 2019</p>
+  <div class="row2">
+    <div class="row2_left">
+      <p>
+        <i class="fas fa-heartbeat" style="color:palevioletred;"></i> 
+        <span class="dht-labels">Heart Rate&emsp;&emsp;&emsp;&emsp;:</span>
+        <span id="heartrate" class="data">%HR%</span>
+        <sup class="units">BPM</sup>
+      </p>
+      <p>
+        <i class="fab fa-angellist" style="color:#2e7eff;"></i>
+        <span class="dht-labels">Oxygen Saturation :</span>
+        <span id="oxygensaturation" class="data">%OXY%</span>
+        <sup class="units">&percnt;</sup>
+      </p>  
+      <p>
+        <i class="fas fa-thermometer-half" style="color:#f1ff2e;"></i> 
+        <span class="dht-labels">&ensp;&nbsp;Temperature &emsp;&emsp;&nbsp;&nbsp;:</span> 
+        <span id="temperature" class="data">%TEMP%</span>
+        <sup class="units">&deg;C</sup>
+      </p>
+    </div>
+    <div class="row2_right">
+      <img src="./images.png" class="img" alt="img">
+    </div>
+  </div>
+  
+
+  <div id="chart-temperature" class="container"></div>
+  <div id="chart-humidity" class="container"></div>
+  <div id="chart-pressure" class="container2"></div>
+  <script src="./apps.js"></script>
+</body>
+
+</html>
