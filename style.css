@@ -1,0 +1,134 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    min-width: 310px;
+    max-width: 800px;
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #03142b;
+}
+.nama{
+    margin: 0;
+    font-size: 1.5rem;
+    color: honeydew;
+    font-family: 'Poppins';
+}
+.datapasien{
+    margin: 0;
+    font-size: 1rem;
+    color: honeydew;
+    font-family: 'Poppins';
+}
+.row2{
+    display: flex;
+}
+.row2_left {
+    width: 60%;
+}
+.row2_right {
+    width: 40%;
+}
+.img{ height: 16rem;}
+p { font-size: 2rem; }
+.units { 
+    font-size: 1.2rem;
+    color: gold; 
+}
+.dht-labels{
+    color: azure;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    vertical-align:middle;
+    padding-bottom: 15px;
+}
+.data{
+    color: gold;
+}
+
+h2 {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-family: 'Poppins';
+    font-size: 3rem;
+    text-align: center;
+    color: azure;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 100px;
+    /* padding-bottom: 100px; */
+    font-weight: 200;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    text-align: center;
+    color: azure;
+}
+
+.datetime {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #10101E;
+    font-family: 'Poppins';
+
+    margin-bottom: 100px;
+    padding: 15px 10px;
+    border: 1px solid #2E94E3;
+    border-radius: 20px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+}
+
+.datetime:hover {
+    background: #2E94E3;
+    box-shadow: 0 0 30px #2E94E3;   
+}
+
+.date{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child){
+    position: relative;
+    margin: 0 6px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time span:last-child{
+    background: #2E94E3;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10;
+    padding: 0 5px;
+    border-radius: 8px;
+}
+
+.highcharts-background{
+    fill: rgba(51, 51, 51);
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+.container2 {
+    padding-bottom: 100px;
+}
